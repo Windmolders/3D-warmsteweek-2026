@@ -67,3 +67,7 @@ figcaption { color:var(--muted); font-size:.85rem; margin-top:6px; }
 .tab { padding:10px 18px; border:1px solid var(--line); border-radius:8px; background:#fff; font:inherit; font-weight:600; cursor:pointer; }
 .tab.active { background:var(--accent); color:#fff; border-color:var(--accent); }
 .tabs + .viewers { margin-top:12px; }
+
+.tab-price { margin-left:8px; padding-left:8px; border-left:1px solid currentColor; font-weight:400; opacity:.8; }
+
+.price-tag { cursor:default; background:#fff; color:var(--fg); }

@@ -3,7 +3,7 @@
     "id": "shizu-japandi-vase",
     "name": "Shizu Japandi Vase",
     "description": "Modern vase inspired by japanese and scandinavian minimalism. The ribs create an elegant and serene look with the edges on the bottom and top being inspired by japanese design. Vase is 179 mm tall and 105 mm wide.",
-    "price": "€ 10",
+    "price": "€ 12",
     "photos": [
       "/photos/model1/model1-1.png"
     ],
@@ -24,7 +24,7 @@
     "id": "drawstring-vase",
     "name": "Drawstring Vase",
     "description": "Bring a soft, handcrafted aesthetic to your space with this minimalist drawstring vase design. Inspired by fabric pouches, the vase features a cinched top with realistic folds and a twine detail that gives it a warm, rustic charm.\n\nPerfect for dried flowers, lavender, cotton stems, or simple decorative arrangements, this piece adds a cozy, natural feel to any room—whether on a table, shelf, or countertop.",
-    "price": "€ 14",
+    "price": "€ 10",
     "photos": [
       "/photos/model3/f9cfdd3c3761d498.webp"
     ],
@@ -34,7 +34,7 @@
     "id": "fuzzy-vase",
     "name": "Fuzzy Vase",
     "description": "Vase in Fuzzy Design\nfor dried flowers or brushes, pens, etc\n\nDimensions\nHeight: approx 11cm\nDiameter top opening: approx 4cm",
-    "price": "€ 16",
+    "price": "€ 8",
     "photos": [
       "/photos/model4/2025-11-10_2191fc8e71ea7.webp"
     ],
@@ -44,16 +44,28 @@
     "id": "spiral-vase",
     "name": "Spiral Vase",
     "description": "This vase is perfect for dried flowers. This vase is sadly not watertight.\n\nThis set includes two sizes: 20 cm or 15 cm.",
-    "price": "€ 18",
     "photos": [
       "/photos/model5/2025-01-30_94e27b86ef7e7.webp"
     ],
-    "file": "/models/obj_1_Vase%20Draft.3mf.stl"
+    "variants": [
+      {
+        "id": "small",
+        "label": "Small",
+        "file": "/models/obj_1_Vase%20Draft.3mf.stl",
+        "price": "€ 12"
+      },
+      {
+        "id": "large",
+        "label": "Large",
+        "file": "/models/obj_1_Vase%20Draft.3mf.stl",
+        "price": "€ 14"
+      }
+    ]
   },
   {
     "id": "modern-japandi-vases",
     "name": "Modern Japandi Set",
-    "description": "Elegant, sculptural vases featuring a flowing, ribbed design that catches light beautifully from every angle. Each vase is designed to achieve a lightweight yet sturdy form, perfect as a standalone decorative piece or for displaying dried and artificial flowers. Their organic curves and tactile surface make them a striking addition to any modern interior.\n\nDimensions:\nTall = 190mm\nMedium = 142mm\nSmall = 95mm",
+    "description": "Elegant, sculptural vases featuring a flowing, ribbed design that catches light beautifully from every angle. Each vase is designed to achieve a lightweight yet sturdy form, perfect as a standalone decorative piece or for displaying dried and artificial flowers. Their organic curves and tactile surface make them a striking addition to any modern interior.\n\nDimensions: Tall = 190mm, Medium = 142mm, Small = 95mm \n\n Sold as a set of three vases.",
     "price": "€ 20",
     "photos": [
       "/photos/model6/2025-09-19_45c5bddfa0208.webp"
@@ -64,7 +76,6 @@
     "id": "aurelia-twin-vases",
     "name": "Aurelia Twin Vases",
     "description": "A set of two vases of different sizes that complement each other perfectly. The minimalist style perfectly complements any interior. The model is ready for printing with thick walls and in “vase mode.”",
-    "price": "€ 22",
     "photos": [
       "/photos/model7/2026-01-01_038a340eabd018.webp"
     ],
@@ -72,12 +83,14 @@
       {
         "id": "a",
         "label": "Vase A",
-        "file": "/models/RP_Vase_02_A.STL"
+        "file": "/models/RP_Vase_02_A.STL",
+        "price": "€ 12"
       },
       {
         "id": "b",
         "label": "Vase B",
-        "file": "/models/RP_Vase_02_B.STL"
+        "file": "/models/RP_Vase_02_B.STL",
+        "price": "€ 12"
       }
     ]
   },
@@ -85,7 +98,7 @@
     "id": "tayo-vase",
     "name": "Tayo Vase",
     "description": "Modern vase inspired by japanese and scandinavian minimalism. The ribs create an elegant and serene look with the edges on the bottom and top being inspired by japanese design. Vase is 180 mm tall and 136 mm wide.",
-    "price": "€ 24",
+    "price": "€ 15",
     "photos": [
       "/photos/model8/2025-07-11_a67dff078bca08.webp"
     ],
@@ -95,7 +108,7 @@
     "id": "neki-japandi-vase",
     "name": "Neki Japandi Vase",
     "description": "Modern Japandi inspired Neki vase. The non-ribbed bottom parts print in fuzzy mode to add a modern texture to the vase. Vase is 176 mm tall and 150 mm wide.",
-    "price": "€ 26",
+    "price": "€ 18",
     "photos": [
       "/photos/model9/2025-04-11_6d8fe35b880408.webp"
     ],
@@ -105,7 +118,6 @@
     "id": "japandi-vase",
     "name": "Japandi Vase",
     "description": "Modern Vases where japanese and scandinavian styles meet, great for this spring's home decoration. Big vase is 220 mm tall and 140 mm wide, small vase is 160 mm tall and 120 mm wide.",
-    "price": "€ 28",
     "photos": [
       "/photos/model10/2025-01-07_7ebd52132579.webp"
     ],
@@ -113,12 +125,14 @@
       {
         "id": "large",
         "label": "Large",
-        "file": "/models/Japandi%20Vase.3mf"
+        "file": "/models/Japandi%20Vase.3mf",
+        "price": "€ 20"
       },
       {
         "id": "small",
         "label": "Small",
-        "file": "/models/Japandi%20Vase%20Small.3mf"
+        "file": "/models/Japandi%20Vase%20Small.3mf",
+        "price": "€ 16"
       }
     ]
   },
@@ -126,20 +140,44 @@
     "id": "japandi-reindeer",
     "name": "Japandi Reindeer",
     "description": "Modern Japandi Reindeer decoration, great contemporary deco for the winter season. Standard size is 135 mm tall and 130% version is 175 mm tall.",
-    "price": "€ 30",
     "photos": [
       "/photos/model11/2025-11-16_c540fbdd15f248.webp"
     ],
-    "file": "/models/Reindeer.3mf"
+    "variants": [
+      {
+        "id": "normal",
+        "label": "Normal",
+        "file": "/models/Reindeer.3mf",
+        "price": "€ 5"
+      },
+      {
+        "id": "tall",
+        "label": "Tall",
+        "file": "/models/Reindeer.3mf",
+        "price": "€ 6"
+      }
+    ]
   },
   {
     "id": "serene-tree",
     "name": "Serene Tree",
     "description": "Modern christmas tree ornaments for vase mode printing. Tall tree is 174mm tall and short tree 132mm and both have a 62mm opening for an electronic tealight.",
-    "price": "€ 32",
     "photos": [
       "/photos/model12/2024-11-18_7250b3212891b.webp"
     ],
-    "file": "/models/Serene%20tree%20tall.3mf"
+    "variants": [
+      {
+        "id": "short",
+        "label": "Short",
+        "file": "/models/Serene%20tree%20tall.3mf",
+        "price": "€ 5"
+      },
+      {
+        "id": "tall",
+        "label": "Tall",
+        "file": "/models/Serene%20tree%20tall.3mf",
+        "price": "€ 6"
+      }
+    ]
   }
 ]

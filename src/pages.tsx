@@ -67,6 +67,7 @@ export function ModelPage() {
   const setColor = (cid: string) => setParam("color", cid);
   const variants = baseModel.variants ?? [];
   const variant = variants.find((v) => v.id === params.get("variant")) ?? variants[0];
+  const price = variant?.price ?? baseModel.price;
   // The selected variant replaces the model file for the viewers.
   const model: Model = variant ? { ...baseModel, file: variant.file, upAxis: variant.upAxis ?? baseModel.upAxis } : baseModel;
 
@@ -92,8 +93,14 @@ export function ModelPage() {
               onClick={() => setParam("variant", v.id)}
             >
               {v.label}
+              {v.price && <span className="tab-price">{v.price}</span>}
             </button>
           ))}
+        </div>
+      )}
+      {variants.length < 2 && price && (
+        <div className="tabs">
+          <span className="tab price-tag">{price}</span>
         </div>
       )}
 
@@ -120,6 +127,8 @@ export function ModelPage() {
         </p> 
         <p className="note">Missing colors? Contact Jonas Windmolders on Teams to see if it is possible to add them.</p>
         <div className="actions">
+          {/* With tabs the price is shown in the tab buttons instead. */}
+          {variants.length < 2 && price && <span className="price">{price}</span>}
           {model.download && (
             <a className="btn secondary" href={model.download} download>Download STL</a>
           )}
