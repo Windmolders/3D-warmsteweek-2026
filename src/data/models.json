@@ -34,7 +34,7 @@
     "id": "fuzzy-vase",
     "name": "Fuzzy Vase",
     "description": "Vase in Fuzzy Design\nfor dried flowers or brushes, pens, etc\n\nDimensions\nHeight: approx 11cm\nDiameter top opening: approx 4cm",
-    "price": "€ 8",
+    "price": "€ 9",
     "photos": [
       "/photos/model4/2025-11-10_2191fc8e71ea7.webp"
     ],
@@ -66,7 +66,7 @@
     "id": "modern-japandi-vases",
     "name": "Modern Japandi Set",
     "description": "Elegant, sculptural vases featuring a flowing, ribbed design that catches light beautifully from every angle. Each vase is designed to achieve a lightweight yet sturdy form, perfect as a standalone decorative piece or for displaying dried and artificial flowers. Their organic curves and tactile surface make them a striking addition to any modern interior.\n\nDimensions: Tall = 190mm, Medium = 142mm, Small = 95mm \n\n Sold as a set of three vases.",
-    "price": "€ 20",
+    "price": "€ 19",
     "photos": [
       "/photos/model6/2025-09-19_45c5bddfa0208.webp"
     ],
@@ -108,7 +108,7 @@
     "id": "neki-japandi-vase",
     "name": "Neki Japandi Vase",
     "description": "Modern Japandi inspired Neki vase. The non-ribbed bottom parts print in fuzzy mode to add a modern texture to the vase. Vase is 176 mm tall and 150 mm wide.",
-    "price": "€ 18",
+    "price": "€ 17",
     "photos": [
       "/photos/model9/2025-04-11_6d8fe35b880408.webp"
     ],
@@ -126,13 +126,13 @@
         "id": "large",
         "label": "Large",
         "file": "/models/Japandi%20Vase.3mf",
-        "price": "€ 20"
+        "price": "€ 19"
       },
       {
         "id": "small",
         "label": "Small",
         "file": "/models/Japandi%20Vase%20Small.3mf",
-        "price": "€ 16"
+        "price": "€ 15"
       }
     ]
   },
