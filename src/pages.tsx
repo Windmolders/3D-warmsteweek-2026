@@ -120,7 +120,6 @@ export function ModelPage() {
         </p> 
         <p className="note">Missing colors? Contact Jonas Windmolders on Teams to see if it is possible to add them.</p>
         <div className="actions">
-          {(variant?.price ?? model.price) && <span className="price">{variant?.price ?? model.price}</span>}
           {model.download && (
             <a className="btn secondary" href={model.download} download>Download STL</a>
           )}
