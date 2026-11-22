@@ -1,0 +1,218 @@
+[
+  {
+    "id": "black",
+    "name": "Black",
+    "hex": "#1c1c1e",
+    "photo": "/filaments/PLA-Basic_Black_29c482c8-ccd6-4559-bf2b-058f7d0d798f.webp"
+  },
+    {
+    "id": "charcoal",
+    "name": "Charcoal Matte",
+    "hex": "#000000",
+    "photo": "/filaments/PLA-Matte_Charcoal.webp",
+    "finish": "matte"
+  },
+ {
+    "id": "dark-gray",
+    "photo": "/filaments/dark-gray.jpg",
+    "name": "Dark Gray",
+    "hex": "#646268"
+  },
+      {
+    "id": "clay matte",
+    "photo": "/filaments/clay_matte.webp",
+    "name": "Clay Matte",
+    "hex": "#666653",
+    "finish": "matte"
+  },
+    {
+    "id": "gray",
+    "name": "Gray",
+    "hex": "#8E9089",
+    "photo": "/filaments/PLA-Basic_Gray.webp"
+  },
+  {
+    "id": "white",
+    "name": "Jade White",
+    "hex": "#ffffff",
+    "photo": "/filaments/pla_baisc_white_jade.webp"
+  },
+      {
+    "id" : "marble-white",
+    "name": "Marble White (speckled)",
+    "hex": "#F7F3F0",
+    "photo": "/filaments/PLA-Marble_White.webp"
+  },
+  {
+    "id" : "bone-white",
+    "name": "Bone White",
+    "hex": "#e3e0d8",
+    "photo": "/filaments/bone-white.webp"
+  },
+  {
+    "id": "beige",
+    "name": "Beige",
+    "hex": "#F7E6DE",
+    "photo": "/filaments/Beige.webp"
+  },
+  {
+    "id": "dessert-tan",
+    "name": "Dessert Tan Matte",
+    "hex": "#E8DBB7",
+    "photo": "/filaments/desert-tan-matte.webp",
+    "finish": "matte"
+  },
+  {
+    "id": "latte-brown",
+    "name": "Latte Brown Matte",
+    "hex": "#D3B7A7",
+    "photo": "/filaments/latte-brown-matte.webp",
+    "finish": "matte"
+  },
+    {
+     "id": "sukura-pink",
+    "name": "Sakura Pink",
+    "hex": "#f2cbe1",
+    "photo": "/filaments/sakura-pink.jpg"
+  },
+  {
+    "id": "sunflower-yellow",
+    "name": "Sunflower Yellow",
+    "hex": "#FEC600",
+    "photo": "/filaments/SunflowerYellow.webp"
+  },
+
+      {
+    "id": "sunny-orange",
+    "name": "Sunny Orange",
+    "hex": "#D8631E",
+    "photo": "/filaments/sunny-orange.webp"
+  },
+  {
+    "id": "cherry-red",
+    "name": "Cherry Red",
+    "hex": "#D93B47",
+    "photo": "/filaments/cherry-red.jpg"
+  },
+    {
+    "id": "dark-red",
+    "name": "Dark Red Matte",
+    "hex": "#BB3D43",
+    "photo": "/filaments/dark-red-matte.webp",
+    "finish": "matte"
+  },
+ {
+    "id": "lavender-purple",
+    "name": "Lavender Purple",
+    "hex": "#685BC7",
+    "photo": "/filaments/PLAPurple.webp"
+  },
+  {
+    "id": "navy-blue",
+    "photo": "/filaments/navy-blue.jpg",
+    "name": "Navy Blue",
+    "hex": "#4F6282"
+  },
+  
+        {
+    "id": "cobalt-blue",
+    "name": "Cobalt Blue",
+    "hex": "#0056B8",
+    "photo": "/filaments/CobaltBlue.webp"
+  },
+   
+   {
+    "id": "cyan",
+    "name": "Cyan",
+    "hex": "#0086D6",
+    "photo": "/filaments/cyan.webp"
+  },
+    {
+    "id": "sky-blue",
+    "name": "Sky Blue",
+    "hex": "#6ABCF6",
+    "photo": "/filaments/sky_blue.jpg"
+  },
+  {
+    "id": "aqua-tide",
+    "photo": "/filaments/aqua-tide.webp",
+    "name": "Aqua Tide",
+    "hex": "#A0D0CA"
+  },
+   {
+    "id": "mint-green",
+    "photo": "/filaments/mint_green_matte.jpg",
+    "name": "Mint Green Matte",
+    "finish": "matte", 
+    "hex": "#C5D99A"
+  },
+  {
+    "id": "bambu-green",
+    "name": "Bambu Green",
+    "hex": "#00AE42",
+    "photo": "/filaments/Bambu_Green.webp"
+  },
+  {
+    "id": "olive-green",
+    "name": "Olive Green Matte",
+    "hex": "#3a6622",
+    "finish": "matte",
+      "photo": "/filaments/oliver_green.webp" 
+  },
+  {
+    "id": "dark-green",
+    "name": "Dark Green Matte",
+    "hex": "#68724D",
+    "finish": "matte", 
+      "photo": "/filaments/dark-green.webp" 
+  },
+
+    {
+    "id": "maple-wood",
+    "name": "Maple Wood",
+    "hex": "#F3D4A4",
+    "photo": "/filaments/maplewood.webp" 
+  },
+  {
+    "id": "wood",
+    "name": "Wood",
+    "hex": "#BFA086",
+        "photo": "/filaments/wood.webp" 
+  },
+      {
+    "id": "cherry-wood",
+    "name": "Cherry Wood",
+    "hex": "#916661",
+    "photo": "/filaments/cherrywood.webp" 
+  },
+  {
+    "id": "walnut-wood",
+    "name": "Walnut Wood",
+    "hex": "#6F5946",
+    "photo": "/filaments/walnut-wood.webp" 
+  },
+
+
+
+    {
+    "id": "metal-bronze",
+    "name": "Metal Bronze",
+    "hex": "#79563F",
+    "finish": "metal",
+    "photo": "/filaments/metal-bronze.png" 
+  },
+    {
+    "id": "metal-silver-gold",
+    "name": "Metal Silver Gold",
+    "hex": "#8C8067",
+    "finish": "metal",
+    "photo": "/filaments/metal-silver-gold.png"
+  },
+      {
+    "id": "gold",
+    "name": "Silk Gold",
+    "hex": "#F8CC6D",
+    "finish": "metal",
+    "photo": "/filaments/gold.jpg" 
+  }
+]
