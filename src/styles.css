@@ -71,3 +71,19 @@ figcaption { color:var(--muted); font-size:.85rem; margin-top:6px; }
 .tab-price { margin-left:8px; padding-left:8px; border-left:1px solid currentColor; font-weight:400; opacity:.8; }
 
 .price-tag { cursor:default; background:#fff; color:var(--fg); }
+
+/* Printable price list */
+@page { size: A4 portrait; margin: 10mm; }
+.pricelist { max-width:190mm; margin:0 auto; padding:8mm 0; background:#fff; color:#18181b; }
+.pl-head h1 { margin:0 0 4px; font-size:22pt; }
+.pl-head p { margin:0 0 1mm; color:#52525b; font-size:9.5pt; }
+.pl-head { margin-bottom:6mm; }
+.pl-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:4mm; }
+.pl-card { border:1px solid #d4d4d8; border-radius:3mm; overflow:hidden; break-inside:avoid; }
+.pl-card img { width:100%; aspect-ratio:4/3; object-fit:cover; display:block; background:#eee; }
+.pl-name { padding:1.5mm 2.5mm 0; font-weight:700; font-size:9pt; }
+.pl-prices { padding:0.5mm 2.5mm 2.5mm; font-size:9pt; min-height:9mm; }
+.pl-prices div { display:flex; justify-content:space-between; }
+.pl-label { color:#52525b; }
+.pl-foot { margin-top:6mm; padding-top:4mm; border-top:1px solid #d4d4d8; text-align:center; font-size:9pt; color:#52525b; }
+@media print { body { background:#fff; } .pricelist { padding:0; } }

@@ -179,5 +179,15 @@
         "price": "€ 6"
       }
     ]
+  },
+  {
+    "id": "japandi-tray",
+    "name": "Japandi Tray",
+    "description": "Minimalist Japandi-style tray.",
+    "price": "€ 6",
+    "file": "/models/Japandi%20Tray.3mf",
+    "photos": [
+      "/photos/model13/5f0b2aecabdde816.webp"
+    ]
   }
 ]
