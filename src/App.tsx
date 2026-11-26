@@ -2,7 +2,8 @@ import { useLayoutEffect } from "react";
 import { Link, Route, Routes, useLocation } from "react-router-dom";
 import { Home, ModelPage } from "./pages";
 import { PriceList } from "./pricelist";
-import { ORDER_FORM, SITE_TITLE } from "./config";
+import { CartPage, useCart } from "./cart";
+import { SITE_TITLE } from "./config";
 
 /** Go back to the top when the page (not just the ?color= or ?variant= query) changes. */
 function ScrollToTop() {
@@ -15,19 +16,19 @@ function ScrollToTop() {
 
 export default function App() {
   const printView = useLocation().pathname === "/pricelist";
+  const { count } = useCart();
   return (
     <>
       <ScrollToTop />
       {!printView && (
       <header className="site-header">
         <Link to="/">{SITE_TITLE}</Link>
-        <a className="btn" href={ORDER_FORM.url} target="_blank" rel="noopener noreferrer">
-          Order
-        </a>
+        <Link to="/cart" className="btn">Cart{count > 0 && ` (${count})`}</Link>
       </header>
       )}
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/cart" element={<CartPage />} />
         <Route path="/pricelist" element={<PriceList />} />
         <Route path="/model/:id" element={<ModelPage />} />
         <Route path="*" element={<main className="container"><p>Page not found.</p></main>} />

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link, useParams, useSearchParams } from "react-router-dom";
 import models from "./data/models.json";
 import colors from "./data/colors.json";
@@ -7,6 +7,7 @@ import { DEFAULT_COLOR_ID, asset } from "./config";
 import { InteractiveViewer, RenderPreview } from "./components/Viewer";
 import { ColorPicker } from "./components/ColorPicker";
 import { Gallery } from "./components/Gallery";
+import { useCart } from "./cart";
 
 const allModels = models as Model[];
 const allColors = colors as PrintColor[];
@@ -45,6 +46,24 @@ function FilamentPhoto({ color }: { color: PrintColor }) {
     <div className="canvas-box filament" style={!src || failed ? { background: color.hex } : undefined}>
       {src && !failed && <img src={src} alt={`${color.name} filament`} onError={() => setFailed(true)} />}
     </div>
+  );
+}
+
+function AddToCart({ modelId, variantId, colorId }: { modelId: string; variantId?: string; colorId: string }) {
+  const { add } = useCart();
+  const [added, setAdded] = useState(false);
+  useEffect(() => {
+    if (!added) return;
+    const timer = setTimeout(() => setAdded(false), 2000);
+    return () => clearTimeout(timer);
+  }, [added]);
+  return (
+    <>
+      <button className="btn" onClick={() => { add({ modelId, variantId, colorId }); setAdded(true); }}>
+        Add to cart
+      </button>
+      {added && <span role="status">Added ✓ <Link to="/cart">View cart</Link></span>}
+    </>
   );
 }
 
@@ -129,6 +148,12 @@ export function ModelPage() {
         <div className="actions">
           {/* With tabs the price is shown in the tab buttons instead. */}
           {variants.length < 2 && price && <span className="price">{price}</span>}
+          <AddToCart
+            key={`${model.id}-${variant?.id}-${color.id}`}
+            modelId={model.id}
+            variantId={variant?.id}
+            colorId={color.id}
+          />
           {model.download && (
             <a className="btn secondary" href={model.download} download>Download STL</a>
           )}

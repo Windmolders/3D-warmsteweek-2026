@@ -2,7 +2,7 @@
 * { box-sizing: border-box; }
 body { margin:0; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; background:var(--bg); color:var(--fg); }
 a { color: inherit; }
-.site-header { display:flex; justify-content:space-between; align-items:center; padding:12px 24px; border-bottom:1px solid var(--line); background:#fff; }
+.site-header { display:flex; justify-content:space-between; align-items:center; padding:12px 24px; border-bottom:1px solid var(--line); background:#fff; position:sticky; top:0; z-index:100; }
 .site-header a { font-weight:700; text-decoration:none; font-size:1.1rem; }
 .container { max-width:1100px; margin:0 auto; padding:24px; }
 h1 { margin:.2em 0; }
@@ -87,3 +87,18 @@ figcaption { color:var(--muted); font-size:.85rem; margin-top:6px; }
 .pl-label { color:#52525b; }
 .pl-foot { margin-top:6mm; padding-top:4mm; border-top:1px solid #d4d4d8; text-align:center; font-size:9pt; color:#52525b; }
 @media print { body { background:#fff; } .pricelist { padding:0; } }
+
+button.btn { border:0; font:inherit; font-weight:600; cursor:pointer; }
+button.btn.secondary { border:1px solid var(--line); }
+.cart-row { display:flex; align-items:center; gap:14px; padding:12px 0; border-bottom:1px solid var(--line); }
+.cart-row img { width:64px; height:64px; object-fit:cover; border-radius:8px; }
+.cart-info { flex:1; display:flex; flex-direction:column; gap:4px; min-width:0; }
+.cart-info a { font-weight:700; text-decoration:none; }
+.cart-info span { color:var(--muted); font-size:.9rem; }
+.dot { display:inline-block; width:12px; height:12px; border-radius:50%; margin-right:6px; box-shadow:0 0 0 1px var(--line); }
+.qty { display:flex; align-items:center; gap:8px; }
+.qty button { width:30px; height:30px; border:1px solid var(--line); border-radius:6px; background:#fff; cursor:pointer; }
+.cart-price { min-width:56px; text-align:right; }
+.remove { border:0; background:none; color:var(--muted); cursor:pointer; }
+.cart-total { display:flex; justify-content:space-between; padding-top:16px; font-weight:700; font-size:1.2rem; }
+@media (max-width:560px) { .cart-row { flex-wrap:wrap; } .cart-row img { width:48px; height:48px; } }

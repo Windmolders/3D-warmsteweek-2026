@@ -2,19 +2,18 @@
 export const SITE_TITLE = "3D Print Warmest Week 2026";
 
 export const ORDER_FORM = {
-  // URL of your form (Google Forms, Tally, Typeform, ...)
+  // Short link, printed on the price list.
   url: "https://forms.cloud.microsoft/e/Ucjdhna8Uv",
-  // Query parameter names used for prefill.
-  // Google Forms: e.g. "entry.123456789". Set to null to send nothing.
-  modelParam: "model" as string | null,
-  colorParam: "color" as string | null,
+  // Full form link, used by the cart: the short link cannot carry a prefilled answer.
+  prefillUrl:
+    "https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=UxAVQpMBqkeege_9gfdyzOp3ppPpDIpMhOA1DngngFlUQzNOOFVNSFVCWUlOMUpRNEJOTEJOQlFSTS4u",
+  // Id of the form question that receives the order.
+  orderParam: "r7702887b21134cdfad98b4c5ba6ad76f",
 };
 
-export function buildOrderUrl(modelName: string, colorName: string): string {
-  const u = new URL(ORDER_FORM.url);
-  if (ORDER_FORM.modelParam) u.searchParams.set(ORDER_FORM.modelParam, modelName);
-  if (ORDER_FORM.colorParam) u.searchParams.set(ORDER_FORM.colorParam, colorName);
-  return u.toString();
+export function buildOrderUrl(order: string): string {
+  // encodeURIComponent, not URLSearchParams: spaces must be %20, not "+".
+  return `${ORDER_FORM.prefillUrl}&${ORDER_FORM.orderParam}=${encodeURIComponent(order)}`;
 }
 
 // Optional background photo for the wall behind the vase in the render, e.g. "/backgrounds/wall.jpg".
